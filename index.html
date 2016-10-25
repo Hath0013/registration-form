@@ -8,29 +8,32 @@
   <link href="css/type.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 <body>
 
-  <form action="thanks.html" method="post">
-    <div class="max-length">
-      <h1>Want to go to Mars?</h1>
+  <form class="island" action="thanks.html" method="post">
+      <h1 class="push-none pad-t exa not-bold">Want to go to Mars?</h1>
+      <hr>
 
-      <p>We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
+      <p class="mega">We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
 
-      <p class="italic">Personal details</p>
-      <div>
+      <fieldset class="remove-border">
+        <p class="italic first-para">Personal details</p><hr class="first-para-hr">
+      <div class="box-width push-r-1-2">
         <label for="name">Name</label>
         <input id="name" name="name">
       </div>
-      <div>
+      <div class="box-width push-r-1-2">
         <label for="age">Age</label>
         <input id="age" age="">
       </div>
-      <div>
-        <label for="email">Email</label>
+      <div class="box-width push-r-1-2">
+        <label class="push-r-1-2" for="email">Email</label>
         <input id="email" type="email" placeholder="me@me.com" name="email">
       </div>
-      <div>
+
+      <div class="box-width push-r-1-2">
         <label for="select">Physical fitness</label>
         <select id="select">
         <option>Super-human</option>
@@ -38,20 +41,26 @@
         <option>Not terribly strong</option>
         <option>A little couch-potato-y</option>
       </div>
+
       <div>
         <label for="address">Address</label>
-        <input id="address" address="">
+        <textarea id="address"></textarea>
       </div>
 
-      <p class="italic">Mission statement</p>
-      <p>Request to join mission</p>
-
+    </fieldset>
+    <fieldset class="remove-border">
+      <p class="italic second-para">Mission statement</p><hr class="second-para-hr">
 
       <div>
         <label for="question">Why do you want to go to Mars?</label>
-        <input id="question" question="">
+        <textarea id="question"></textarea>
+      </div>
 
-      <button type="submit">Register for the trip!</button>
+      <a class="link-box pad-t-1-8 pad-b-1-8 gutter-1-2 milli" href="thanks.html">Register for the trip!</a>
+
+      <p>Request to join the mission</p>
+
+    </fieldset>
 
     </form>
 </body>
