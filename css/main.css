@@ -10,7 +10,6 @@ html {
 }
 
 body {
-  background-color: #f2f2f2;
   vertical-align: middle;
 }
 
@@ -18,35 +17,13 @@ form {
   background-color: #fff;
 }
 
-.first-para {
-  display: inline-block;
-  width: 25%;
-}
-
-.first-para-hr {
-  display: inline-block;
-  width: 70%;
-}
-
-.second-para {
-  display: inline-block;
-  width: 30%;
-}
-
-.second-para-hr {
-  display: inline-block;
-  width: 70%;
-}
-
 button {
+  color: #f2f2f2;
+  padding: .3rem;
   background-color: #000;
   border-collapse: collapse;
   border: solid 1px #000;
   border-radius: 8px;
-}
-
-a {
-  color: #fff;
 }
 
 .remove-border {
@@ -59,9 +36,7 @@ label {
 
 @media only screen and (min-width: 60em) {
 
-  .box-width {
-    display: inline-block;
-    width: 45%;
+  html {
+    line-height: 1.4;
   }
-
 }
